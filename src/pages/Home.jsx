@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Card, CardQuality } from "../../componentes/Cards";
-import { Collections, CardList, Works } from "../../componentes/DataList";
+import { Card, CardQuality } from "../componentes/Cards";
+import { Collections, CardList, Works } from "../componentes/DataList";
 
 
 export const Home = () => {

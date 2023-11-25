@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { Navbar } from "./componentes/Navbar";
 
 import { About } from "./pages/About";
-import { Home } from "./pages/Home/Home";
+import { Home } from "./pages/Home";
 import { Footer } from "./componentes/Footer";
 export const Cofferoasters = () => {
   return (

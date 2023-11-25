@@ -17,3 +17,16 @@ export const CardQuality = ({ objeto }) => {
     </div>
   );
 };
+
+export const CardLocation = ({ objeto }) => {
+  return (
+    <div key={objeto.id}>
+      <img src={objeto.locationMap} alt={objeto.alt} />
+      <h1>{objeto.city}</h1>
+      <p>{objeto.street}</p>
+      <p>{objeto.town}</p>
+      <p>{objeto.code}</p> 
+      <p>{objeto.phone}</p>
+    </div>
+  );
+};
