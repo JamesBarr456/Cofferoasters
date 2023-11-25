@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 export const Navbar = () => {
   return (
     <nav>
-        <img src="src/assets/home/logo.svg" alt="" />
+        <img src="src/assets/icons/logo.svg" alt="" />
       <ul>
         <li>
           <NavLink to="/">Home</NavLink>
