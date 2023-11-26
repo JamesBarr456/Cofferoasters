@@ -32,13 +32,15 @@ export const CardQuality = ({ objeto }) => {
 
 export const CardLocation = ({ objeto }) => {
   return (
-    <div key={objeto.id}>
-      <img src={objeto.locationMap} alt={objeto.alt} />
-      <h1>{objeto.city}</h1>
-      <p>{objeto.street}</p>
-      <p>{objeto.town}</p>
-      <p>{objeto.code}</p> 
-      <p>{objeto.phone}</p>
+    <div className="px-10" key={objeto.id}>
+      <img className="mx-auto md:mx-0" src={objeto.locationMap} alt={objeto.alt} />
+      <h1 className="font-fraunces text-2xl mt-8">{objeto.city}</h1>
+      <div className="text-slate-600 font-barlow space-y-2 mt-4">
+        <p>{objeto.street}</p>
+        <p>{objeto.town}</p>
+        <p>{objeto.code}</p>
+        <p>{objeto.phone}</p>
+      </div>
     </div>
   );
 };

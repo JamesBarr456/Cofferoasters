@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
 import logo from '../assets/icons/logo.svg'
 import menu from '../assets/home/svg/menu.svg'
+import close from '../assets/icons/close.svg'
 
-export const Navbar = () => {
+export const Navbar = ({modal}) => {
+  
   return (
     <nav className="container mx-auto p-5 lg:py-8 flex justify-between items-center">
       <h1>
@@ -10,7 +12,7 @@ export const Navbar = () => {
       </h1>
       
       <button className="lg:hidden">
-        <img className="w-6" src={menu} alt="menu" />
+        <img className="w-6" src={modal? close: menu} alt={modal? 'icono de cerrar modal': 'icono menu'} />
       </button>
 
       <ul className="hidden lg:flex gap-5 font-barlow font-bold text-light-gray uppercase text-xs lg:text-sm">

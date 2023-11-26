@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Card, CardQuality, Card2 } from "../componentes/Cards";
 import { Collections, CardList, Works } from "../componentes/DataList";
+import { Navbar } from "../componentes/Navbar";
+import { NavLink } from "react-router-dom";
 
 export const Home = () => {
   const [coffes, setCoffes] = useState(Collections);
@@ -27,6 +29,19 @@ export const Home = () => {
             </button>
           </div>
         </div>
+
+        {/* Offcamnbas */}
+        <div className="fixed top-0 bottom-0 left-0 right-0 bg-neutral-200 px-5 -translate-x-full invisible transition-transform z-10">
+          <Navbar modal={true}/>
+          <nav className="container mx-auto px-5 mt-20">
+            <ul className="bg-gradient-to-b from-neutral-200 to-neutral-500 rounded-xl text-center h-[600px] font-fraunces text-2xl space-y-10">
+              <li className=""><NavLink to="/">Home</NavLink></li>
+              <li className=""><NavLink to="/about">About us</NavLink></li>
+            </ul>
+          </nav>
+        </div>
+        {/* Fin de offcanbas */}
+
       </header>
       <section className="container mx-auto px-5 py-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
         {coffes.map((coffe) => (
