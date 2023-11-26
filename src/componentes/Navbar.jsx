@@ -1,33 +1,21 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 import menu from "../assets/home/svg/menu.svg";
-import { useState } from "react";
-import close from "../assets/icons/icon-close.svg";
-export const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+import close from "../assets/icons/close.svg";
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-    console.log("espero mostrar algo");
-  };
-
+export const Navbar = ({ modal }) => {
   return (
     <nav className="container mx-auto p-5 lg:py-8 flex justify-between items-center">
       <h1>
         <img className="w-52 lg:w-60" src={logo} alt="logo" />
       </h1>
 
-      <button
-        className={`lg:hidden ${showMenu ? "hidden" : "block"}`}
-        onClick={toggleMenu}
-      >
-        <img className="w-6" src={menu} alt="menu" />
-      </button>
-      <button
-        className={`lg:hidden ${showMenu ? "block" : "hidden"}`}
-        onClick={toggleMenu}
-      >
-        <img className="w-6" src={close} alt="menu" />
+      <button className="lg:hidden">
+        <img
+          className="w-6"
+          src={modal ? close : menu}
+          alt={modal ? "icono de cerrar modal" : "icono menu"}
+        />
       </button>
 
       <ul
