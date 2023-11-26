@@ -18,11 +18,7 @@ export const Navbar = ({ modal }) => {
         />
       </button>
 
-      <ul
-        className={`${
-          !showMenu ? "hidden" : ""
-        } lg:flex gap-5 font-barlow font-bold text-light-gray uppercase text-xs lg:text-sm`}
-      >
+      <ul className="hidden lg:flex gap-5 font-barlow font-bold text-light-gray uppercase text-xs lg:text-sm">
         <li className="hover:text-slate-950 transition-all">
           <NavLink to="/">Home</NavLink>
         </li>
