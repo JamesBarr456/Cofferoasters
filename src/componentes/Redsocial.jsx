@@ -4,7 +4,7 @@ import instagram from '../assets/icons/instagram.svg'
 export const Redsocial = () => {
   return (
     <div>
-      <ul>
+      <ul className='flex justify-center gap-7'>
         <li>
           <a href="https://www.facebook.com">
             <img src={facebook} alt="visit our facebook page" />

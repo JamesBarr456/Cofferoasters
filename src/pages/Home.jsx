@@ -34,15 +34,15 @@ export const Home = () => {
         ))}
       </section>
       <section className="container mx-auto px-5 text-center">
-        <div className="bg-dark-indigo rounded-xl px-4 text-white">
-          <h2 className="font-fraunces text-3xl">Why choose us?</h2>
+        <div className="bg-dark-indigo rounded-xl px-4 py-24 space-y-8 text-white">
+          <h2 className="font-fraunces text-3xl lg:text-5xl">Why choose us?</h2>
           <p className="font-barlow text-slate-300">
             A large part of our role is choosing which particular coffees will
             be featured in our range. This means working closely with the best
             coffee growers to give you a more impactful experience on every
             level.
           </p>
-          <div>
+          <div className="space-y-7 lg:grid lg:grid-cols-3 lg:gap-7 lg:space-y-0 lg:w-10/12 lg:mx-auto">
             {qualities.map((qualitie) => (
               <Card2 objeto={qualitie}></Card2>
             ))}
@@ -50,17 +50,17 @@ export const Home = () => {
         </div>
       </section>
       <section className=" container mx-auto px-5">
-        <div className=" text-center">
+        <div className=" text-center lg:text-start my-20">
           <h2 className="font-fraunces text-2xl text-slate-500">
             How it works
           </h2>
-          <div className="space-y-14">
+          <div className="space-y-14 lg:grid lg:grid-cols-3 lg:space-y-0 lg:w-11/12 lg:gap-16">
             {works.map((work) => (
               <CardQuality objeto={work}></CardQuality>
             ))}
           </div>
-          <div>
-            <button type="button">Create your plan</button>
+          <div className="mt-20">
+            <button className="bg-teal-600 text-white font-fraunces p-4 rounded-xl text-lg hover:bg-sky-300 transition-colors" type="button">Create your plan</button>
           </div>
         </div>
       </section>

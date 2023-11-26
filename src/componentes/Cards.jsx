@@ -10,10 +10,12 @@ export const Card = ({ objeto }) => {
 
 export const Card2 = ({ objeto }) => {
   return (
-    <div key={objeto.id} className="">
-      <img src={objeto.imgUrl} className="w-52 mx-auto" alt={objeto.title} />
-      <h2 className="font-fraunces text-2xl mt-7">{objeto.title}</h2>
-      <p className="font-barlow mt-3">{objeto.summary}</p>
+    <div key={objeto.id} className="bg-teal-600 rounded-xl p-10 h-[350px] grid content-center">
+      <div>
+        <img src={objeto.imgUrl} className="w-20 mx-auto" alt={objeto.title} />
+        <h2 className="font-fraunces text-2xl mt-7">{objeto.title}</h2>
+        <p className="font-barlow mt-3 text-slate-300">{objeto.summary}</p>
+      </div>
     </div>
   );
 };
@@ -22,7 +24,7 @@ export const CardQuality = ({ objeto }) => {
   return (
     <div className="space-y-5" key={objeto.id}>
       <span className="text-7xl font font-fraunces text-light-pink">{objeto.sub}</span>
-      <h3 className="font-fraunces text-2xl text-slate-700">{objeto.title}</h3>
+      <h3 className="font-fraunces text-2xl lg:text-3xl text-slate-700">{objeto.title}</h3>
       <p className="font-barlow text-slate-700">{objeto.summary}</p>
     </div>
   );
