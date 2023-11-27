@@ -17,30 +17,30 @@ import Australia from '../assets/about/svg/illustration-australia.svg'
 export const Collections = [
   {
     id: "1",
-    title: "Gran Espresso",
+    title: "Espresso",
     summary:
-      "Light and flavorful blend with cocoa and black pepper for an intense experience",
+      "Mezcla ligera y sabrosa con cacao y pimienta negra para una experiencia intensa",
     imgUrl: gran,
   },
   {
     id: "2",
     title: "Planalto",
     summary:
-      "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts",
+      "Brasileño asado oscuro con cuerpo rico y aterciopelado, y toques de frutas y nueces",
     imgUrl: planalto,
   },
   {
     id: "3",
     title: "Piccollo",
     summary:
-      "Mild and smooth blend featuring notes of toasted almond and dried cherry",
+      "Mezcla suave y suave con notas de almendras tostadas y cereza seca",
     imgUrl: piccolo,
   },
   {
     id: "4",
     title: "Danche",
     summary:
-      "Ethiopian hand-harvested blend densely packed with vibrant fruit notes",
+      "Mezcla etíope halada de mano densamente repleta de notas vibrantes de frutas",
     imgUrl: danche,
   },
 ];
@@ -48,23 +48,23 @@ export const Collections = [
 export const CardList = [
   {
     id: "10",
-    title: "Best quality",
+    title: "Mejor calidad",
     summary:
-      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+      "Descubra una variedad interminable del mejor café artesanal del mundo de cada uno de nuestros tostadores.",
     imgUrl: quality,
   },
   {
     id: "11",
-    title: "Exclusive benefits",
+    title: "Beneficios exclusivos",
     summary:
-      "Special offers and swag when you subscribe, including 30% off your first shipment.",
+      "Ofertas especiales y botín cuando se suscribe, incluido un 30% de descuento en su primer envío.",
     imgUrl: gifts,
   },
   {
     id: "12",
-    title: "Free shipping",
+    title: "Envío gratis",
     summary:
-      "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.",
+      "Cubrimos el costo y el café se entrega rápidamente. Peakness Peak: Garantizado.",
     imgUrl: truck,
   },
 ];
@@ -72,25 +72,21 @@ export const CardList = [
 export const Works = [
     {
         id: '21',
-        title: 'Pick your coffee',
+        title: 'Elige tu café',
         sub: '01',
-        summary: `Select from our evolving range of artisan coffees. Our beans are ethically 
-        sourced and we pay fair prices for them. There are new coffees in all profiles 
-        every month for you to try out.`
+        summary: `Seleccione de nuestra gama evolutiva de cafés artesanales. Nuestros frijoles son de origen ético y les pagamos precios justos por ellos. Hay nuevos cafés en todos los perfiles cada mes para que lo pruebes.`
     },
     {
         id: '22',
-        title: ' Choose the frequency',
+        title: 'Elija la frecuencia',
         sub: '02',
-        summary: `Customize your order frequency, quantity, even your roast style and grind type. 
-    Pause, skip or cancel your subscription with no commitment through our online portal.`
+        summary: `Personalice su frecuencia de pedido, cantidad, incluso su estilo de asado y su tipo de rutina. Pausa, omita o cancele su suscripción sin compromiso a través de nuestro portal en línea.`
     },
     {
         id: '23',
-        title: 'Receive and enjoy!',
+        title: '¡Recibe y disfruta!',
         sub: '03',
-        summary: `We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning 
-    world-class coffees curated to provide a distinct tasting experience.`
+        summary: `Enviamos su paquete en 48 horas, recién asada. Siéntese y disfrute de los galardonados cafés de clase mundial seleccionados para proporcionar una experiencia de degustación distinta.`
     },
 
 ]
